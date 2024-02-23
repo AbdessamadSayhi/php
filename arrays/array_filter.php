@@ -21,6 +21,7 @@ $arr2 = array_filter($arr, function ($value) {
     return $value % 2 == 0; // will return only even numbers
 });
 
+
 echo "<pre>";
 print_r($arr2);
 echo "</pre>";

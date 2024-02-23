@@ -3,7 +3,6 @@
 function find_uniq($a)
 {
     $count = [];
-
     foreach ($a as $element) {
         $key = serialize($element); // Use serialization to capture both value and type
         if (!isset($count[$key])) {
@@ -19,7 +18,6 @@ function find_uniq($a)
             return $uniqueElement;
         }
     }
-
     return null; // No unique element found (optional handling based on your use case)
 }
 
