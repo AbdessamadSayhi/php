@@ -4,12 +4,16 @@ class BlogPost {
 
 
     public function __construct(
-        public  string $title,
-        public string $body,
-        public string $author,
-        public dateTime $date,
-        public $comments = []
+        private string $title,
+        private string $body,
+        private string $author,
+        private dateTime $date,
+        private $comments = []
     ){
 
+    }
+
+    public function addBlogPost(){
+        echo '...';
     }
 }
