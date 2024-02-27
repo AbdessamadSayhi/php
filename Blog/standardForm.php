@@ -1,10 +1,6 @@
-<?php
-include './includes/db.php';
-include './includes/header.php';
-?>
 <div class="container mt-5">
-    <h2>Login</h2>
-    <form action="login_process.php" method="post">
+    <h2>Login as Administrator</h2>
+    <form action="./admin/login_process.php" method="post">
 
         <div class="form-group">
             <label for="username">username:</label>
@@ -17,7 +13,10 @@ include './includes/header.php';
         </div>
 
         <button type="submit" class="btn btn-primary">Login</button>
+
+        <br>
+
+        <a href="register.php">You are not registred yet?</a>
     </form>
 
 </div>
-<?php include_once('./includes/footer.php') ?>
