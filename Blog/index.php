@@ -17,7 +17,7 @@ include './includes/header.php';
                     <div class="card-body">
                         <h5 class="card-title"><?php echo htmlspecialchars($row['title']); ?></h5>
                         <p class="card-text"><?php echo nl2br(htmlspecialchars($row['body'])); ?></p>
-                        <p class="card-text">Author: <?php echo htmlspecialchars($row['author']); ?></p>
+                        <p class="card-text">Author: <?php echo htmlspecialchars($row['author_id']); ?></p>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <?php require_once('../includes/navbar.html') ?>
+    <?php require_once('navbar.html') ?>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
