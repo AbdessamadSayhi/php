@@ -25,3 +25,7 @@
     </ul>
   </div>
 </nav>
+<?php 
+session_start();
+
+?>

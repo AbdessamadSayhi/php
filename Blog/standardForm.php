@@ -16,7 +16,12 @@
 
         <br>
 
-        <a href="register.php">You are not registred yet?</a>
+        <?php
+        session_start();
+
+        if (!isset($_SESSION['user_id'])) : ?>
+            <a href="register.php">You are not registred yet?</a>
+        <?php endif; ?>
     </form>
 
 </div>
