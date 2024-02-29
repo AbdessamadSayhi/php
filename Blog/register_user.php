@@ -22,4 +22,12 @@ function registerUser($pdo, $username, $password, $role)
             return ['success' => false, 'message' => 'Registration failed. Please try again.'];
         }
     }
+    // Redirect to appropriate page based on user role
+    if ($role === 'admin') {
+        header("Location: admin_dashboard.php");
+        exit();
+    } else {
+        header("Location: user_dashboard.php");
+        exit();
+    }
 }

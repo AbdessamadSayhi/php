@@ -7,17 +7,17 @@ class myArrays
     public function __construct()
     {
     }
-    function my_array_key_exists(int|string $key, array $array): bool
+    public function my_array_key_exists(int|string $key, array $array): bool
     {
         foreach ($array as $array_key => $array_value) {
-            if ($key == $array_key) {
+            if ($key === $array_key) {
                 return true;
             }
         }
         return false;
     }
 
-    function my_array_count_values(array $array): array
+    public function my_array_count_values(array $array): array
     {
         $newCounting = [];
         foreach ($array as $value) {
